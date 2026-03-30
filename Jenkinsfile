@@ -4,7 +4,7 @@ pipeline{
         stage('1. Checkout'){
         git 'https://github.com/PearlDcosta/myremote.git'
     }
-}
+
     stage('2. Build Image'){
         steps{
             bat 'docker build -t myweb .'
@@ -21,4 +21,5 @@ pipeline{
             bat 'docker run -d -p 8000:80 --name mycont myweb'
         }
     }
+}
 }
