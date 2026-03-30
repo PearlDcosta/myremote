@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('1. Checkout'){
             steps{
-                git url: 'https://github.com/michyre/DOCKERNEW.git', branch:'main'
+                git url: 'https://github.com/PearlDcosta/myremote.git', branch:'main'
             }
         }
 
