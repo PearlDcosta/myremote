@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage('1. Checkout'){
-        git 'https://github.com/PearlDcosta/myremote.git'
+        git 'https://github.com/PearlDcosta/myremote.git' branch:'main'
     }
 }
     stage('2. Build Image'){
