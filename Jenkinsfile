@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    stages('Checkout'){
+    stages{
         stage('1. Checkout'){
         git 'https://github.com/PearlDcosta/myremote.git'
     }
